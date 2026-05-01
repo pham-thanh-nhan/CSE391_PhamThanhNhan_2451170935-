@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Thanh Nhân</title>
+    <style>
+        .imgLogo{
+            width: 80px;
+            background-color: lightgray;
+        }
+        .container{
+            width: 1400px;
+            margin: auto;
+            padding: 20px;
+        }
+        body{
+            font-family: Arial;
+            margin: 20px;
+        }
+        header{
+            background: lightgray;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+        }
+        nav a {
+            margin-right: 10px;
+        }
+        
+        section {
+            margin-top: 20px;
+        }
+        img{
+            width: 180px;
+            border-radius: 8px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            
+        }
+        th, td {
+            padding: 5px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        footer {
+             background: lightgray;
+            margin-top: 20px;
+            text-align: center;
+            height: 50px;
+            padding-top:5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <h1>Trang Chủ</h1>
+        <nav>
+            <a href="#about">Thông tin</a>
+            <a href="#skills">Kỹ năng</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+    </header>
+    
+    <main class="container" >
+
+        <section id = "about" >
+            <h2>Thông tin</h2>
+            <article>
+                <p>Tôi là sinh viên năm 2 đang học lập trình web.</p>
+            </article>
+            <figure>
+                <img src="/phieuBaiTap01/img/anhChanDung.jpg" alt="Ảnh đại diện">
+                <figcaption>Ảnh đại diện của tôi</figcaption>
+            </figure>
+        </section>
+
+        <section id="skills" >
+            <h2>Kỹ năng</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kỹ năng</th>
+                        <th>Mức độ</th>
+                        <th>Ghi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>⭐⭐⭐</td>
+                        <td>Đã học qua</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>⭐⭐⭐</td>
+                        <td>Đã học qua</td>
+                    </tr>
+                    <tr>
+                        <td>JS</td>
+                        <td>⭐</td>
+                        <td>Đã được nghe qua</td>
+                    </tr>
+                </tbody>
+            </table>
+            <tfoot>
+                <tr>
+                    <td>---->Đang học lại và tiếp tục học thêm</td>
+                </tr>
+            </tfoot>
+        </section>
+    </main>
+    <aside id="contact" class="container" >
+        <h2>Liên hệ</h2>
+        <p>Email: phamthanhnhankk123@gmail.com</p>
+        <p>SĐT: 0363802048</p>
+    </aside>
+
+    <footer>
+        <h3>Quyết tâm được A</h3>
+    </footer>
+    
+</body>
+</html>

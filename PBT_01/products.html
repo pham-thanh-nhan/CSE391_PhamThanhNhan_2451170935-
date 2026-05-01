@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .imgLogo {
+        width: 80px;
+        background-color: lightgray;
+    }
+
+    .container {
+        width: 1400px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    body {
+        font-family: Arial;
+        margin: 20px;
+    }
+
+    header {
+        background: lightgray;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+    }
+
+    nav a {
+        margin-right: 10px;
+    }
+
+    section {
+        margin-top: 20px;
+    }
+
+    img {
+        width: 180px;
+        border-radius: 8px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+
+    }
+
+    th,
+    td {
+        padding: 5px;
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    footer {
+        background: lightgray;
+        margin-top: 20px;
+        text-align: center;
+        height: 50px;
+        padding-top: 5px;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    .col-6{
+        width: 50%;
+        padding: 10px;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+</style>
+
+<body>
+    <header>
+
+        <h1>Shop</h1>
+        <nav>
+            <a href="#products">Sản phẩm</a>
+            <a href="#compare">So sánh</a>
+            <a href="#footer">Liên hệ</a>
+        </nav>
+    </header>
+    <main class="container">
+
+        <section id="products">
+            <h2>1.Sản phẩm nổi bật</h2>
+            <div class="row">
+                <article class="col-6  " >
+
+                    <figure>
+                        <img src="/phieuBaiTap01/img/anhiphone17.jpg">
+                        <alt="Ảnh đại diện">
+                    </figure>
+                    <figcaption>Ảnh đại diện của tôi</figcaption>
+                    <h3>Điện thoại</h3>
+                    <p>Điện thoại giá rẻ</p>
+                    <p><strong>7.000.000đ</strong></p>
+                    <a href="#">Mua ngay</a>
+                </article>
+                <article>
+                    <figure>
+                        <img src="/phieuBaiTap01/img/anhiphone17.jpg">
+                    </figure>
+                    <h3>Điện thoại B</h3>
+                    <p>Hiệu năng tốt</p>
+                    <p>Giá: <strong>7.000.000đ</strong></p>
+                    <a href="#">Mua ngay</a>
+                </article>
+            </div>
+            <div class="row">
+
+                <article class="col-6" >
+                    <figure>
+                        <img src="/phieuBaiTap01/img/anhiphone17.jpg">
+                    </figure>
+                    <div >
+                        <h3>Điện thoại C</h3>
+                    <p>Chụp ảnh đẹp</p>
+                    <p>Giá: <mark>9.000.000đ</mark></p>
+                    <a href="#">Mua ngay</a>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="/phieuBaiTap01/img/anhiphone17.jpg">
+                    </figure>
+                    <h3>Điện thoại D</h3>
+                    <p>Cao cấp</p>
+                    <p>Giá: <strong>12.000.000đ</strong></p>
+                    <a href="#">Mua ngay</a>
+                </article>
+                
+            </div>
+            </section>
+            
+            
+            <section id="compare">
+            <h2>Bảng so sánh</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Tiêu chí</th>
+                        <th colspan="3">Sản phẩm</th>
+                    </tr>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Giá</td>
+                        <td>5tr</td>
+                        <td>7tr</td>
+                        <td>9tr</td>
+                    </tr>
+                    <tr>
+                        <td>Pin</td>
+                        <td>4000</td>
+                        <td>4500</td>
+                        <td>5000</td>
+                    </tr>
+                    <tr>
+                        <td>Camera</td>
+                        <td>12MP</td>
+                        <td>48MP</td>
+                        <td>64MP</td>
+                    </tr>
+                    <tr>
+                        <td>Màn hình</td>
+                        <td>6.1</td>
+                        <td>6.5</td>
+                        <td>6.7</td>
+                    </tr>
+                    <tr>
+                        <td>RAM</td>
+                        <td>4GB</td>
+                        <td>6GB</td>
+                        <td>8GB</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Thông tin tham khảo</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </section>
+    </main>
+    <footer id="footer">
+        <a href="#">Chính sách</a> |
+        <a href="#">Liên hệ</a> |
+        <a href="#">Hỏi đáp</a>
+    </footer>
+    <table>
+        <tr>
+            <td rowspan="2" >Data 1</td>
+            <td colspan="2" >Data 2</td>
+            
+            <td>Data 4</td>
+        </tr>
+        <tr>
+            
+            <td>Data 2</td>
+            <td>Data 3</td>
+            <td>Data 4</td>
+        </tr>
+    </table>
+    <p>l</p>
+    <p>l</p>
+    <p>l</p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</body>
+
+</html>
